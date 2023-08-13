@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRUD operaions Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <fieldset>
+   <legend> <h2>FORM</h2></legend>
+    <input type="text" id="name" name="name" placeholder="Name" ><br><br>
+    <input type="text" id="job" name="job" placeholder="Job"><br><br>
+    <input type="number" id="experience" name="experience" placeholder="Experience"><br><br>
+    <input type="button" value="submit" id="btn"  onclick="submit(event)" >
+  </fieldset>
+  <br>
+  <div id="msg"></div>
+  <fieldset>
+    <legend><h2>data stored local storage</h2></legend>
+    <table id="table" border="2">
+     <thead id="head">
+      <tr>
+        <th>Name</th>
+        <th>Job</th>
+        <th>exp</th>
+        <th>Action
+          <button id="delete" onclick="removeAll()">deleteAll</button>
+        </th>
+      </tr>
+     </thead>
+     <tbody id="tb">
+     </tbody>
+    </table>
+  </fieldset>
+</body>
+<script src="script.js"></script>
+</html>
+
+<!-- 
+<tr>
+  <td class="col">name</td>
+  <td class="col">job</td>
+  <td class="col">exp</td>
+  <td class="col">Action
+    <button id="deleteAllButton" onclick="deleteAllData()">Delete All</button>
+
+  </td>
+</tr> -->
